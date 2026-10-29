@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center">
+  <title>Nayeong Cho | Atmospheric Scientist</title>
+  <style>
+    :root { --ink:#1d3043; --muted:#607080; --blue:#155c84; --line:#e4eaf0; --bg:#f9fbfd; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; color:var(--ink); background:#fff; font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; }
+    a { color:var(--blue); text-decoration:none; } a:hover { text-decoration:underline; }
+    .topbar { border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:10; }
+    .nav { max-width:1120px; padding:18px 28px; margin:auto; display:flex; justify-content:space-between; align-items:center; gap:18px; }
+    .brand { font-weight:750; color:var(--ink); font-size:18px; letter-spacing:-.4px; }
+    .navlinks { display:flex; gap:26px; font-size:14px; font-weight:600; }
+    .page { max-width:1120px; padding:58px 28px 90px; margin:auto; display:grid; grid-template-columns:275px minmax(0,1fr); gap:74px; }
+    .sidebar { align-self:start; position:sticky; top:115px; }
+    .portrait { width:165px; height:165px; border-radius:50%; overflow:hidden; display:grid; place-items:center; background:linear-gradient(135deg,#e8eff5,#c9dbe7); color:#6f91a6; border:4px solid #fff; box-shadow:0 3px 18px #112f4615; margin-bottom:20px; }
+    .portrait svg { width:80px; height:80px; }
+    .portrait img { width:100%; height:100%; object-fit:cover; }
+    .sidebar h1 { font-size:29px; line-height:1.2; margin:0 0 8px; letter-spacing:-.7px; }
+    .position { font-size:15px; font-weight:700; margin:0; }
+    .affiliation { color:var(--muted); font-size:14px; line-height:1.55; margin:8px 0 16px; }
+    .tagline { font-size:14px; margin:0 0 20px; }
+    .profilelinks { display:flex; flex-wrap:wrap; gap:9px; }
+    .profilelinks a, .cvbutton { border:1px solid #cddce5; border-radius:7px; padding:7px 12px; font-size:13px; font-weight:650; background:#fff; }
+    .intro { padding:1px 0 26px; border-bottom:1px solid var(--line); }
+    .eyebrow { font-size:12px; color:var(--blue); text-transform:uppercase; letter-spacing:2px; font-weight:750; }
+    .intro h2 { font-size:37px; letter-spacing:-1.2px; line-height:1.2; margin:8px 0 18px; }
+    .intro p { color:#405364; font-size:17px; max-width:650px; margin:0 0 17px; }
+    section { scroll-margin-top:95px; }
+    .sectionhead { display:flex; justify-content:space-between; align-items:center; margin:45px 0 20px; }
+    .sectionhead h2 { margin:0; font-size:25px; letter-spacing:-.7px; }
+    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:19px; }
+    .researchcard { border:1px solid var(--line); border-radius:13px; overflow:hidden; background:#fff; box-shadow:0 4px 12px #243b5307; }
+    .art { height:178px; overflow:hidden; position:relative; }
+    .art svg { width:100%; height:100%; display:block; }
+    .researchbody { padding:18px 19px 22px; }
+    .researchbody h3 { margin:0 0 5px; font-size:18px; }
+    .researchbody p { color:var(--muted); font-size:14px; line-height:1.55; margin:0; }
+    .paper { padding:20px 0; border-bottom:1px solid var(--line); }
+    .paper:first-of-type { padding-top:0; }
+    .paper h3 { font-size:17px; margin:0 0 5px; line-height:1.5; }
+    .paper p { margin:0; color:var(--muted); font-size:14px; }
+    .note { font-size:13px; color:var(--muted); margin-top:14px; }
+    .cvpanel { background:var(--bg); border:1px solid var(--line); padding:20px 22px; border-radius:11px; display:flex; justify-content:space-between; gap:20px; align-items:center; }
+    .cvpanel p { color:var(--muted); font-size:14px; margin:3px 0 0; }
+    .cvbutton { white-space:nowrap; }
+    footer { border-top:1px solid var(--line); max-width:1120px; padding:24px 28px; margin:auto; color:var(--muted); font-size:13px; }
+    @media (max-width:760px) { .page { grid-template-columns:1fr; gap:30px; padding-top:33px; } .sidebar { position:static; display:grid; grid-template-columns:110px minmax(0,1fr); column-gap:20px; } .portrait { width:105px; height:105px; grid-row:span 5; } .sidebar h1 { font-size:25px; } .profilelinks { grid-column:2; } .nav { padding:14px 20px; } .page { padding-left:20px; padding-right:20px; } .navlinks { gap:13px; } .intro h2 { font-size:30px; } }
+    @media (max-width:480px) { .cards { grid-template-columns:1fr; } .navlinks { font-size:12px; gap:10px; } .sidebar { grid-template-columns:1fr; } .portrait { grid-row:auto; } .profilelinks { grid-column:1; } .cvpanel { flex-direction:column; align-items:flex-start; } }
+  
+    .intro h2 { font-size:34px; }
+    .subpage-title { font-size:36px; letter-spacing:-1px; line-height:1.2; margin:6px 0 12px; }
+    .subpage-lead { color:var(--muted); margin:0 0 24px; }
+    .actions { display:flex; flex-wrap:wrap; gap:10px; margin:18px 0; }
+    .actionlink { display:inline-flex; padding:9px 14px; border-radius:7px; background:var(--blue); color:white; font-size:14px; font-weight:700; }
+    .actionlink:hover { color:white; }
+    .actionlink.disabled { background:#e7edf2; color:#697988; cursor:not-allowed; }
+    .helpnote { background:var(--bg); border:1px solid var(--line); border-radius:10px; padding:15px 18px; color:var(--muted); font-size:14px; }
+    .paper .paperlinks { margin-top:8px; }
+    .paperlinks a { font-size:14px; margin-right:14px; }
+    @media (min-width:761px) and (max-width:1050px) { .cards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  </style>
+</head>
+<body>
+  <header class="topbar"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
+  <div class="page" id="home">
+    <aside class="sidebar" aria-label="Researcher profile">
+      <div class="portrait" aria-label="Profile photo placeholder">
+        <!-- To display your photograph: upload profile.jpg beside index.html, then replace the SVG below with <img src="profile.jpg" alt="Nayeong Cho"> -->
+        <svg viewBox="0 0 100 100" role="img" aria-label="Profile picture placeholder"><circle cx="50" cy="36" r="19" fill="currentColor"/><path d="M15 91q4-33 35-33t35 33" fill="currentColor"/></svg>
+      </div>
+      <h1>Nayeong Cho</h1>
+      <p class="position">Atmospheric Scientist</p>
+      <p class="affiliation">Assistant Research Scientist<br>University of Maryland, Baltimore County (UMBC)<br>NASA Goddard Space Flight Center</p>
+      <p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
+      <div class="profilelinks"><a href="https://orcid.org/0000-0001-6401-2391" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a href="https://github.com/nayeongcho-atmos" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+    </aside>
+    <main>
+      <span class="eyebrow">Research outputs</span>
+      <h2 class="subpage-title">Publications</h2>
+      <p class="subpage-lead">Selected publications and research papers.</p>
+      <!-- PUBLICATIONS: To add a paper, copy one <article class="paper"> ... </article> block. -->
+      <article class="paper">
+        <h3>Describing Seasonal Mixtures of Cloud Regimes via “Regimes of Regimes”</h3>
+        <p><em>Journal of Climate</em> · 2021</p>
+        <!-- Add a verified DOI link inside a <div class="paperlinks"> when ready. -->
+      </article>
+      <!-- ADD NEW PUBLICATIONS ABOVE THIS LINE -->
+      <p class="helpnote">More publications will be added here. For a fuller publication record, see <a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>.</p>
+    </main>
+  </div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
