@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center">
-  <title>Nayeong Cho | Atmospheric Scientist</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center" name="description"/>
+<title>Nayeong Cho | Atmospheric Scientist</title>
+<style>
     :root { --ink:#1d3043; --muted:#607080; --blue:#155c84; --line:#e4eaf0; --bg:#f9fbfd; }
     * { box-sizing: border-box; }
     html { scroll-behavior:smooth; }
@@ -17,9 +18,9 @@
     .navlinks { display:flex; gap:26px; font-size:14px; font-weight:600; }
     .page { max-width:1120px; padding:58px 28px 90px; margin:auto; display:grid; grid-template-columns:275px minmax(0,1fr); gap:74px; }
     .sidebar { align-self:start; position:sticky; top:115px; }
-    .portrait { width:165px; height:165px; border-radius:50%; overflow:hidden; display:grid; place-items:center; background:linear-gradient(135deg,#e8eff5,#c9dbe7); color:#6f91a6; border:4px solid #fff; box-shadow:0 3px 18px #112f4615; margin-bottom:20px; }
+    .portrait { width:220px; height:255px; border-radius:14px; overflow:hidden; background:#f3f6f9; border:4px solid #fff; box-shadow:0 3px 18px #112f4615; margin-bottom:20px; }
     .portrait svg { width:80px; height:80px; }
-    .portrait img { width:100%; height:100%; object-fit:cover; }
+    .portrait img { width:100%; height:100%; display:block; object-fit:cover; object-position:42% center; }
     .sidebar h1 { font-size:29px; line-height:1.2; margin:0 0 8px; letter-spacing:-.7px; }
     .position { font-size:15px; font-weight:700; margin:0; }
     .affiliation { color:var(--muted); font-size:14px; line-height:1.55; margin:8px 0 16px; }
@@ -49,8 +50,8 @@
     .cvpanel p { color:var(--muted); font-size:14px; margin:3px 0 0; }
     .cvbutton { white-space:nowrap; }
     footer { border-top:1px solid var(--line); max-width:1120px; padding:24px 28px; margin:auto; color:var(--muted); font-size:13px; }
-    @media (max-width:760px) { .page { grid-template-columns:1fr; gap:30px; padding-top:33px; } .sidebar { position:static; display:grid; grid-template-columns:110px minmax(0,1fr); column-gap:20px; } .portrait { width:105px; height:105px; grid-row:span 5; } .sidebar h1 { font-size:25px; } .profilelinks { grid-column:2; } .nav { padding:14px 20px; } .page { padding-left:20px; padding-right:20px; } .navlinks { gap:13px; } .intro h2 { font-size:30px; } }
-    @media (max-width:480px) { .cards { grid-template-columns:1fr; } .navlinks { font-size:12px; gap:10px; } .sidebar { grid-template-columns:1fr; } .portrait { grid-row:auto; } .profilelinks { grid-column:1; } .cvpanel { flex-direction:column; align-items:flex-start; } }
+    @media (max-width:760px) { .page { grid-template-columns:1fr; gap:30px; padding-top:33px; } .sidebar { position:static; display:grid; grid-template-columns:110px minmax(0,1fr); column-gap:20px; } .portrait { width:110px; height:140px; grid-row:span 5; } .sidebar h1 { font-size:25px; } .profilelinks { grid-column:2; } .nav { padding:14px 20px; } .page { padding-left:20px; padding-right:20px; } .navlinks { gap:13px; } .intro h2 { font-size:30px; } }
+    @media (max-width:480px) { .cards { grid-template-columns:1fr; } .navlinks { font-size:12px; gap:10px; } .sidebar { grid-template-columns:1fr; } .portrait { width:180px; height:215px; grid-row:auto; } .profilelinks { grid-column:1; } .cvpanel { flex-direction:column; align-items:flex-start; } }
   
     .intro h2 { font-size:34px; }
     .subpage-title { font-size:36px; letter-spacing:-1px; line-height:1.2; margin:6px 0 12px; }
@@ -66,40 +67,30 @@
   </style>
 </head>
 <body>
-  <header class="topbar"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
-  <div class="page" id="home">
-    <aside class="sidebar" aria-label="Researcher profile">
-      <div class="portrait" aria-label="Profile photo"><img src="profile.jpg" alt="Nayeong Cho at NASA" loading="eager"></div>
-      <h1>Nayeong Cho</h1>
-      <p class="position">Atmospheric Scientist</p>
-      <p class="affiliation">Assistant Research Scientist<br>University of Maryland, Baltimore County (UMBC)<br>NASA Goddard Space Flight Center</p>
-      <p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
-      <div class="profilelinks">
-        <a href="https://science.gsfc.nasa.gov/sci/bio/nayeong.cho" target="_blank" rel="noopener noreferrer">NASA Profile ↗</a>
-        <a href="mailto:nayeong.cho@nasa.gov">Email ↗</a>
-        <a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-        <a href="https://www.linkedin.com/in/nayeong-cho-3a354419a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://www.researchgate.net/profile/Nayeong-Cho" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a>
-        <a href="https://orcid.org/0000-0001-6401-2391" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
-      </div>
-    </aside>
-    <main>
-      <span class="eyebrow">Academic background</span>
-      <h2 class="subpage-title">Curriculum Vitae</h2>
-      <p class="subpage-lead">Nayeong Cho · Assistant Research Scientist, UMBC / NASA Goddard Space Flight Center.</p>
-      <section class="cvpanel">
-        <div>
-          <strong>Curriculum Vitae (PDF)</strong>
-          <p>My CV will be available to download here.</p>
-        </div>
-        <!-- Once you upload Nayeong_Cho_CV.pdf to the repository root, replace the disabled span below with:
-        <a class="actionlink" href="Nayeong_Cho_CV.pdf" download>Download CV ↓</a>
-        -->
-        <span class="actionlink disabled" aria-disabled="true">PDF coming soon</span>
-      </section>
-      <div class="actions"><a class="cvbutton" href="https://orcid.org/0000-0001-6401-2391" target="_blank" rel="noopener noreferrer">ORCID ↗</a><a class="cvbutton" href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div>
-    </main>
-  </div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<header class="topbar"><nav aria-label="Main navigation" class="nav"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
+<div class="page" id="home">
+<aside aria-label="Researcher profile" class="sidebar">
+<div aria-label="Profile photo" class="portrait"><img alt="Nayeong Cho at NASA" loading="eager" src="profile.jpg"/></div>
+<h1>Nayeong Cho</h1>
+<p class="position">Atmospheric Scientist</p>
+<p class="affiliation">Assistant Research Scientist<br/>University of Maryland, Baltimore County (UMBC)<br/>NASA Goddard Space Flight Center</p>
+<p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
+<div class="profilelinks">
+<a href="https://science.gsfc.nasa.gov/sci/bio/nayeong.cho" rel="noopener noreferrer" target="_blank">NASA Profile ↗</a>
+<a href="mailto:nayeong.cho@nasa.gov">Email ↗</a>
+<a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a>
+<a href="https://www.linkedin.com/in/nayeong-cho-3a354419a" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">ResearchGate ↗</a>
+<a href="https://orcid.org/0000-0001-6401-2391" rel="noopener noreferrer" target="_blank">ORCID ↗</a>
+</div>
+</aside>
+<main>
+<h2 class="subpage-title">Curriculum Vitae</h2>
+<section class="cvpanel" aria-label="Download curriculum vitae">
+  <a class="actionlink" href="Nayeong_Cho_CV.pdf" download="Nayeong_Cho_CV.pdf">Download CV ↓</a>
+</section>
+</main>
+</div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
