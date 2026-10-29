@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center">
-  <title>Nayeong Cho | Atmospheric Scientist</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center" name="description"/>
+<title>Publications | Nayeong Cho</title>
+<style>
     :root { --ink:#1d3043; --muted:#607080; --blue:#155c84; --line:#e4eaf0; --bg:#f9fbfd; }
     * { box-sizing: border-box; }
     html { scroll-behavior:smooth; }
@@ -17,9 +18,9 @@
     .navlinks { display:flex; gap:26px; font-size:14px; font-weight:600; }
     .page { max-width:1120px; padding:58px 28px 90px; margin:auto; display:grid; grid-template-columns:275px minmax(0,1fr); gap:74px; }
     .sidebar { align-self:start; position:sticky; top:115px; }
-    .portrait { width:165px; height:165px; border-radius:50%; overflow:hidden; display:grid; place-items:center; background:linear-gradient(135deg,#e8eff5,#c9dbe7); color:#6f91a6; border:4px solid #fff; box-shadow:0 3px 18px #112f4615; margin-bottom:20px; }
+    .portrait { width:220px; height:255px; border-radius:14px; overflow:hidden; background:#f3f6f9; border:4px solid #fff; box-shadow:0 3px 18px #112f4615; margin-bottom:20px; }
     .portrait svg { width:80px; height:80px; }
-    .portrait img { width:100%; height:100%; object-fit:cover; }
+    .portrait img { width:100%; height:100%; display:block; object-fit:cover; object-position:42% center; }
     .sidebar h1 { font-size:29px; line-height:1.2; margin:0 0 8px; letter-spacing:-.7px; }
     .position { font-size:15px; font-weight:700; margin:0; }
     .affiliation { color:var(--muted); font-size:14px; line-height:1.55; margin:8px 0 16px; }
@@ -49,8 +50,8 @@
     .cvpanel p { color:var(--muted); font-size:14px; margin:3px 0 0; }
     .cvbutton { white-space:nowrap; }
     footer { border-top:1px solid var(--line); max-width:1120px; padding:24px 28px; margin:auto; color:var(--muted); font-size:13px; }
-    @media (max-width:760px) { .page { grid-template-columns:1fr; gap:30px; padding-top:33px; } .sidebar { position:static; display:grid; grid-template-columns:110px minmax(0,1fr); column-gap:20px; } .portrait { width:105px; height:105px; grid-row:span 5; } .sidebar h1 { font-size:25px; } .profilelinks { grid-column:2; } .nav { padding:14px 20px; } .page { padding-left:20px; padding-right:20px; } .navlinks { gap:13px; } .intro h2 { font-size:30px; } }
-    @media (max-width:480px) { .cards { grid-template-columns:1fr; } .navlinks { font-size:12px; gap:10px; } .sidebar { grid-template-columns:1fr; } .portrait { grid-row:auto; } .profilelinks { grid-column:1; } .cvpanel { flex-direction:column; align-items:flex-start; } }
+    @media (max-width:760px) { .page { grid-template-columns:1fr; gap:30px; padding-top:33px; } .sidebar { position:static; display:grid; grid-template-columns:110px minmax(0,1fr); column-gap:20px; } .portrait { width:110px; height:140px; grid-row:span 5; } .sidebar h1 { font-size:25px; } .profilelinks { grid-column:2; } .nav { padding:14px 20px; } .page { padding-left:20px; padding-right:20px; } .navlinks { gap:13px; } .intro h2 { font-size:30px; } }
+    @media (max-width:480px) { .cards { grid-template-columns:1fr; } .navlinks { font-size:12px; gap:10px; } .sidebar { grid-template-columns:1fr; } .portrait { width:180px; height:215px; grid-row:auto; } .profilelinks { grid-column:1; } .cvpanel { flex-direction:column; align-items:flex-start; } }
   
     .intro h2 { font-size:34px; }
     .subpage-title { font-size:36px; letter-spacing:-1px; line-height:1.2; margin:6px 0 12px; }
@@ -63,40 +64,64 @@
     .paper .paperlinks { margin-top:8px; }
     .paperlinks a { font-size:14px; margin-right:14px; }
     @media (min-width:761px) and (max-width:1050px) { .cards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-  </style>
+  
+    .publication-group { margin-top: 33px; }
+    .publication-group-title { color: var(--ink); font-size:20px; margin:0 0 8px; padding-bottom:10px; border-bottom:2px solid var(--line); }
+    .paper h3 a { color:var(--ink); }
+    .paper h3 a:hover { color:var(--blue); }
+    .paper-arrow { color:var(--blue); font-weight:500; white-space:nowrap; }
+    .paperlinks { margin-top:5px; }
+</style>
 </head>
 <body>
-  <header class="topbar"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
-  <div class="page" id="home">
-    <aside class="sidebar" aria-label="Researcher profile">
-      <div class="portrait" aria-label="Profile photo"><img src="profile.jpg" alt="Nayeong Cho at NASA" loading="eager"></div>
-      <h1>Nayeong Cho</h1>
-      <p class="position">Atmospheric Scientist</p>
-      <p class="affiliation">Assistant Research Scientist<br>University of Maryland, Baltimore County (UMBC)<br>NASA Goddard Space Flight Center</p>
-      <p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
-      <div class="profilelinks">
-        <a href="https://science.gsfc.nasa.gov/sci/bio/nayeong.cho" target="_blank" rel="noopener noreferrer">NASA Profile ↗</a>
-        <a href="mailto:nayeong.cho@nasa.gov">Email ↗</a>
-        <a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-        <a href="https://www.linkedin.com/in/nayeong-cho-3a354419a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://www.researchgate.net/profile/Nayeong-Cho" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a>
-        <a href="https://orcid.org/0000-0001-6401-2391" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
-      </div>
-    </aside>
-    <main>
-      <span class="eyebrow">Research outputs</span>
-      <h2 class="subpage-title">Publications</h2>
-      <p class="subpage-lead">Selected publications and research papers.</p>
-      <!-- PUBLICATIONS: To add a paper, copy one <article class="paper"> ... </article> block. -->
-      <article class="paper">
-        <h3>Describing Seasonal Mixtures of Cloud Regimes via “Regimes of Regimes”</h3>
-        <p><em>Journal of Climate</em> · 2021</p>
-        <!-- Add a verified DOI link inside a <div class="paperlinks"> when ready. -->
-      </article>
-      <!-- ADD NEW PUBLICATIONS ABOVE THIS LINE -->
-      <p class="helpnote">More publications will be added here. For a fuller publication record, see <a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>.</p>
-    </main>
-  </div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<header class="topbar"><nav aria-label="Main navigation" class="nav"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
+<div class="page" id="home">
+<aside aria-label="Researcher profile" class="sidebar">
+<div aria-label="Profile photo" class="portrait"><img alt="Nayeong Cho at NASA" loading="eager" src="profile.jpg"/></div>
+<h1>Nayeong Cho</h1>
+<p class="position">Atmospheric Scientist</p>
+<p class="affiliation">Assistant Research Scientist<br/>University of Maryland, Baltimore County (UMBC)<br/>NASA Goddard Space Flight Center</p>
+<p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
+<div class="profilelinks">
+<a href="https://science.gsfc.nasa.gov/sci/bio/nayeong.cho" rel="noopener noreferrer" target="_blank">NASA Profile ↗</a>
+<a href="mailto:nayeong.cho@nasa.gov">Email ↗</a>
+<a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a>
+<a href="https://www.linkedin.com/in/nayeong-cho-3a354419a" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">ResearchGate ↗</a>
+<a href="https://orcid.org/0000-0001-6401-2391" rel="noopener noreferrer" target="_blank">ORCID ↗</a>
+</div>
+</aside>
+<main><span class="eyebrow">Research outputs</span><h2 class="subpage-title">Publications</h2><p class="subpage-lead">Peer-reviewed publications and preprints. Select a paper title to visit its official DOI record. Access to full text depends on the publisher.</p><section class="publication-group"><h3 class="publication-group-title">Peer-reviewed journal articles</h3>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JCLI-D-26-0073.1" rel="noopener noreferrer" target="_blank">Cloud Radiative Effect Variability in the Recent Satellite Record and Associated Cloud Radiative Response <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Climate</em> · 2026</p><div class="paperlinks"><a href="https://doi.org/10.1175/JCLI-D-26-0073.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JCLI-D-25-0242.1" rel="noopener noreferrer" target="_blank">The Role of Earth’s Major Cloud Systems in the Hemispheric Albedo Symmetry <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Climate</em> · 2025</p><div class="paperlinks"><a href="https://doi.org/10.1175/JCLI-D-25-0242.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JCLI-D-24-0275.1" rel="noopener noreferrer" target="_blank">Describing Seasonal Mixtures of Cloud Regimes via “Regimes of Regimes” <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Climate</em> · 2025</p><div class="paperlinks"><a href="https://doi.org/10.1175/JCLI-D-24-0275.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1029/2024JD041716" rel="noopener noreferrer" target="_blank">Regimes of Cloud Vertical Structure From Active Observations <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2025</p><div class="paperlinks"><a href="https://doi.org/10.1029/2024JD041716" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1038/s41561-024-01427-z" rel="noopener noreferrer" target="_blank">Substantial cooling effect from aerosol-induced increase in tropical marine cloud cover <span class="paper-arrow">↗</span></a></h3><p><em>Nature Geoscience</em> · 2024</p><div class="paperlinks"><a href="https://doi.org/10.1038/s41561-024-01427-z" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.3389/frsen.2022.1076471" rel="noopener noreferrer" target="_blank">Revisiting cloud overlap with a merged dataset of liquid and ice cloud extinction from CloudSat and CALIPSO <span class="paper-arrow">↗</span></a></h3><p><em>Frontiers in Remote Sensing</em> · 2022</p><div class="paperlinks"><a href="https://doi.org/10.3389/frsen.2022.1076471" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JTECH-D-21-0166.1" rel="noopener noreferrer" target="_blank">Assessment of Two Stochastic Cloud Subcolumn Generators Using Observed Fields of Vertically Resolved Cloud Extinction <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Atmospheric and Oceanic Technology</em> · 2022</p><div class="paperlinks"><a href="https://doi.org/10.1175/JTECH-D-21-0166.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1038/s41561-022-00991-6" rel="noopener noreferrer" target="_blank">Machine learning reveals climate forcing from aerosols is dominated by increased cloud cover <span class="paper-arrow">↗</span></a></h3><p><em>Nature Geoscience</em> · 2022</p><div class="paperlinks"><a href="https://doi.org/10.1038/s41561-022-00991-6" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JHM-D-21-0154.1" rel="noopener noreferrer" target="_blank">Evaluation of GPROF V05 Precipitation Retrievals under Different Cloud Regimes <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Hydrometeorology</em> · 2022</p><div class="paperlinks"><a href="https://doi.org/10.1175/JHM-D-21-0154.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JAMC-D-20-0247.1" rel="noopener noreferrer" target="_blank">Classifying Planetary Cloudiness with an Updated Set of MODIS Cloud Regimes <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Applied Meteorology and Climatology</em> · 2021</p><div class="paperlinks"><a href="https://doi.org/10.1175/JAMC-D-20-0247.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1175/JAMC-D-20-0253.1" rel="noopener noreferrer" target="_blank">Cloud–Precipitation Hybrid Regimes and Their Projection onto IMERG Precipitation Data <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Applied Meteorology and Climatology</em> · 2021</p><div class="paperlinks"><a href="https://doi.org/10.1175/JAMC-D-20-0253.1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.5194/gmd-13-673-2020" rel="noopener noreferrer" target="_blank">An evaluation of clouds and radiation in a large-scale atmospheric model using a cloud vertical structure classification <span class="paper-arrow">↗</span></a></h3><p><em>Geoscientific Model Development</em> · 2020</p><div class="paperlinks"><a href="https://doi.org/10.5194/gmd-13-673-2020" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1029/2019JD031287" rel="noopener noreferrer" target="_blank">A Global Survey of Apparent Aerosol–Cloud Interaction Signals <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2020</p><div class="paperlinks"><a href="https://doi.org/10.1029/2019JD031287" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1029/2018GL081590" rel="noopener noreferrer" target="_blank">The Role of Thermodynamic Phase Shifts in Cloud Optical Depth Variations With Temperature <span class="paper-arrow">↗</span></a></h3><p><em>Geophysical Research Letters</em> · 2019</p><div class="paperlinks"><a href="https://doi.org/10.1029/2018GL081590" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.5194/acp-18-3065-2018" rel="noopener noreferrer" target="_blank">Contrasting the Co-variability of Daytime Cloud and Precipitation over Tropical Land and Ocean <span class="paper-arrow">↗</span></a></h3><p><em>Atmospheric Chemistry and Physics</em> · 2018</p><div class="paperlinks"><a href="https://doi.org/10.5194/acp-18-3065-2018" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1002/2017JD026629" rel="noopener noreferrer" target="_blank">New Insights about Cloud Vertical Structure from CloudSat and CALIPSO Observations <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2017</p><div class="paperlinks"><a href="https://doi.org/10.1002/2017JD026629" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1002/2016JD026120" rel="noopener noreferrer" target="_blank">Using MODIS Cloud Regimes to Sort Diagnostic Signals of Aerosol–Cloud–Precipitation Interactions <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2017</p><div class="paperlinks"><a href="https://doi.org/10.1002/2016JD026120" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1038/nature22974" rel="noopener noreferrer" target="_blank">Strong constraints on aerosol–cloud interactions from volcanic eruptions <span class="paper-arrow">↗</span></a></h3><p><em>Nature</em> · 2017</p><div class="paperlinks"><a href="https://doi.org/10.1038/nature22974" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1002/2015JD024502" rel="noopener noreferrer" target="_blank">Radiative effects of global MODIS cloud regimes <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2016</p><div class="paperlinks"><a href="https://doi.org/10.1002/2015JD024502" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1002/2013JD021409" rel="noopener noreferrer" target="_blank">An examination of the nature of global MODIS cloud regimes <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2014</p><div class="paperlinks"><a href="https://doi.org/10.1002/2013JD021409" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.1016/j.jphotobiol.2012.11.007" rel="noopener noreferrer" target="_blank">Effects of ozone and aerosol on surface UV radiation variability <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Photochemistry and Photobiology B: Biology</em> · 2013</p><div class="paperlinks"><a href="https://doi.org/10.1016/j.jphotobiol.2012.11.007" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+</section><section class="publication-group"><h3 class="publication-group-title">Preprints</h3>
+<article class="paper"><h3><a href="https://doi.org/10.22541/essoar.15009287/v1" rel="noopener noreferrer" target="_blank">A Cloud System View of the Changing Planetary Energy Budget <span class="paper-arrow">↗</span></a></h3><p><em>ESS Open Archive</em> · 2026</p><div class="paperlinks"><a href="https://doi.org/10.22541/essoar.15009287/v1" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://doi.org/10.48550/arXiv.2605.11968" rel="noopener noreferrer" target="_blank">Assessment of cloud and associated radiation fields from a GAN stochastic cloud subcolumn generator <span class="paper-arrow">↗</span></a></h3><p><em>arXiv</em> · 2026</p><div class="paperlinks"><a href="https://doi.org/10.48550/arXiv.2605.11968" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+</section><section class="publication-group"><h3 class="publication-group-title">Additional ResearchGate records — DOI not confirmed</h3>
+<article class="paper"><h3><a href="https://doi.org/10.1002/2016JD025193" rel="noopener noreferrer" target="_blank">Interregional differences in MODIS-derived cloud regimes <span class="paper-arrow">↗</span></a></h3><p><em>Journal of Geophysical Research: Atmospheres</em> · 2016</p><div class="paperlinks"><a href="https://doi.org/10.1002/2016JD025193" rel="noopener noreferrer" target="_blank">DOI ↗</a></div></article>
+<article class="paper"><h3><a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">Publisher Correction: Machine learning reveals climate forcing from aerosols is dominated by increased cloud cover <span class="paper-arrow">↗</span></a></h3><p><em>Nature Geoscience</em> · 2022</p><div class="paperlinks"><a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">ResearchGate ↗</a></div></article>
+<article class="paper"><h3><a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">Erratum: Strong constraints on aerosol–cloud interactions from volcanic eruptions <span class="paper-arrow">↗</span></a></h3><p><em>Nature</em> · 2017</p><div class="paperlinks"><a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">ResearchGate ↗</a></div></article>
+</section><p class="helpnote">Journal titles link to DOI landing pages when verified. Publisher PDF availability may depend on subscriptions. The ResearchGate list also contains earlier preprint versions and corrections; duplicate preprint versions have been consolidated. Records without a verified DOI link to the author’s ResearchGate profile for review. <a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">View ResearchGate profile ↗</a></p></main>
+</div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
