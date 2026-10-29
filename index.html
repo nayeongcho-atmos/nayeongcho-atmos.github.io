@@ -1,11 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center">
-  <title>Nayeong Cho | Atmospheric Scientist</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Nayeong Cho — Atmospheric Scientist, UMBC and NASA Goddard Space Flight Center" name="description"/>
+<title>Nayeong Cho | Atmospheric Scientist</title>
+<style>
     :root { --ink:#1d3043; --muted:#607080; --blue:#155c84; --line:#e4eaf0; --bg:#f9fbfd; }
     * { box-sizing: border-box; }
     html { scroll-behavior:smooth; }
@@ -63,42 +64,58 @@
     .paper .paperlinks { margin-top:8px; }
     .paperlinks a { font-size:14px; margin-right:14px; }
     @media (min-width:761px) and (max-width:1050px) { .cards { grid-template-columns:repeat(2,minmax(0,1fr)); } }
-  </style>
+  
+    /* Research imagery: preserve full animated map and enable 2-by-2 cards */
+    .researchcard .art { background:#f3f6f9; }
+    .researchcard .art img { display:block; width:100%; height:100%; object-fit:contain; }
+    .researchcard .art img.animated-map { object-fit:contain; }
+    .researchcard .researchbody h3 { line-height:1.35; }
+    @media (prefers-reduced-motion: reduce) { .researchcard { transition:none; } }
+</style>
 </head>
 <body>
-  <header class="topbar"><nav class="nav" aria-label="Main navigation"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
-  <div class="page" id="home">
-    <aside class="sidebar" aria-label="Researcher profile">
-      <div class="portrait" aria-label="Profile photo"><img src="profile.jpg" alt="Nayeong Cho at NASA" loading="eager"></div>
-      <h1>Nayeong Cho</h1>
-      <p class="position">Atmospheric Scientist</p>
-      <p class="affiliation">Assistant Research Scientist<br>University of Maryland, Baltimore County (UMBC)<br>NASA Goddard Space Flight Center</p>
-      <p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
-      <div class="profilelinks">
-        <a href="https://science.gsfc.nasa.gov/sci/bio/nayeong.cho" target="_blank" rel="noopener noreferrer">NASA Profile ↗</a>
-        <a href="mailto:nayeong.cho@nasa.gov">Email ↗</a>
-        <a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
-        <a href="https://www.linkedin.com/in/nayeong-cho-3a354419a" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        <a href="https://www.researchgate.net/profile/Nayeong-Cho" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a>
-        <a href="https://orcid.org/0000-0001-6401-2391" target="_blank" rel="noopener noreferrer">ORCID ↗</a>
-      </div>
-    </aside>
-    <main>
-      <div class="intro">
-        <span class="eyebrow">About me</span>
-        <h2>Understanding Earth's Climate System</h2>
-        <p>I am an atmospheric scientist and an Assistant Research Scientist at the University of Maryland, Baltimore County (UMBC), working at NASA's Goddard Space Flight Center.</p>
-        <p>My research focuses on understanding clouds and their role in Earth's climate system, particularly how cloud properties and their radiative effects influence Earth's energy budget and its variability. Using satellite observations, I investigate cloud regimes, cloud–radiation interactions, and cloud feedbacks, with a growing interest in understanding the contributions of cloud systems to recent changes in Earth's energy imbalance.</p>
-        <p>Outside of research, I enjoy a variety of hobbies, with my interests shifting from time to time. These days, I'm particularly into running, golf, reading, and knitting.</p>
-      </div>
-      <section id="research"><div class="sectionhead"><h2>Research</h2></div><div class="cards">
-        <article class="researchcard"><div class="art"><svg viewBox="0 0 480 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract scientific illustration of Earth's radiation balance"><defs><linearGradient id="space" x2="1" y2="1"><stop stop-color="#071b37"/><stop offset="1" stop-color="#236d96"/></linearGradient><radialGradient id="earth"><stop stop-color="#6fd2db"/><stop offset=".7" stop-color="#2469a3"/><stop offset="1" stop-color="#083d68"/></radialGradient></defs><path fill="url(#space)" d="M0 0h480v250H0z"/><circle cx="245" cy="227" r="174" fill="url(#earth)"/><path d="M110 174q68-32 100 5t77-12 109-4" fill="none" stroke="#d1f6fc" stroke-width="22" opacity=".62"/><path d="M130 206q91-40 142 4t118-18" fill="none" stroke="#e8f9f5" stroke-width="11" opacity=".5"/><g stroke="#ffd589" stroke-width="3" fill="none" stroke-linecap="round"><path d="M80 45l52 58"/><path d="M120 30l44 49"/><path d="M172 22l31 41"/></g><g stroke="#a5def3" stroke-width="3" fill="none"><path d="M317 110l22-58"/><path d="M356 132l35-68"/></g></svg></div><div class="researchbody"><h3>Earth's Energy Budget</h3><p>Radiative changes, Earth's energy imbalance, and cloud-system contributions.</p></div></article>
-        <article class="researchcard"><div class="art"><svg viewBox="0 0 480 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Abstract scientific illustration of marine cloud patterns"><defs><linearGradient id="ocean" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a506d"/><stop offset="1" stop-color="#459ba7"/></linearGradient><filter id="blur"><feGaussianBlur stdDeviation="9"/></filter></defs><path fill="url(#ocean)" d="M0 0h480v250H0z"/><g fill="none" stroke="#e1f8f7" stroke-width="27" opacity=".8" filter="url(#blur)"><path d="M-48 48C31-28 134 15 174 62s124 85 170 26 109-17 177-34"/><path d="M-34 149C36 95 102 138 165 173s117 54 180 4 116-27 174 5"/></g><g fill="none" stroke="#fff" stroke-width="10" opacity=".65"><path d="M-43 49C38-27 133 15 174 64s124 83 169 27 109-16 177-34"/><path d="M-34 153C36 99 102 140 165 175s117 54 180 4 116-27 174 5"/></g></svg></div><div class="researchbody"><h3>Cloud Feedbacks</h3><p>Satellite observations, cloud-property changes, and cloud radiative kernels.</p></div></article>
-      
-        <article class="researchcard"><div class="art"><svg viewBox="0 0 480 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Stylized satellite cloud classification patterns"><defs><linearGradient id="classOcean" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0d354f"/><stop offset="1" stop-color="#488ba5"/></linearGradient></defs><rect width="480" height="250" fill="url(#classOcean)"/><g opacity=".85" stroke="#e5f8fb" stroke-width="3" fill="#e5f8fb"><path d="M22 55q35-31 69 4t67-3 65 5 74-15 68 14 79-8" opacity=".8"/><path d="M35 145q28-35 58-2t76-17 74 17 72-8 84 11 69-20" opacity=".6"/><path d="M-25 207q55-22 100 7t71-10 83 8 91-22 78 24 87-20" opacity=".55"/></g><g fill="none" stroke="#bedde8" opacity=".55"><path d="M160 0v250M320 0v250M0 83h480M0 166h480" stroke-width="1.5"/></g><g fill="#f8fdff" opacity=".75"><circle cx="80" cy="55" r="11"/><circle cx="239" cy="122" r="12"/><circle cx="396" cy="195" r="11"/></g></svg></div><div class="researchbody"><h3>Cloud Systems &amp; Classification</h3><p>Cloud regimes, satellite-based cloud classification, and the organization of cloud systems.</p></div></article>
-      </div></section>
-    </main>
-  </div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+<header class="topbar"><nav aria-label="Main navigation" class="nav"><a class="brand" href="index.html">Nayeong Cho</a><div class="navlinks"><a href="index.html#research">Research</a><a href="publications.html">Publications</a><a href="cv.html">CV</a></div></nav></header>
+<div class="page" id="home">
+<aside aria-label="Researcher profile" class="sidebar">
+<div aria-label="Profile photo" class="portrait"><img alt="Nayeong Cho at NASA" loading="eager" src="profile.jpg"/></div>
+<h1>Nayeong Cho</h1>
+<p class="position">Atmospheric Scientist</p>
+<p class="affiliation">Assistant Research Scientist<br/>University of Maryland, Baltimore County (UMBC)<br/>NASA Goddard Space Flight Center</p>
+<p class="tagline">Understanding clouds and their role in Earth's changing energy budget.</p>
+<div class="profilelinks">
+<a href="https://science.gsfc.nasa.gov/sci/bio/nayeong.cho" rel="noopener noreferrer" target="_blank">NASA Profile ↗</a>
+<a href="mailto:nayeong.cho@nasa.gov">Email ↗</a>
+<a href="https://scholar.google.com/citations?user=oNxAK6EAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Scholar ↗</a>
+<a href="https://www.linkedin.com/in/nayeong-cho-3a354419a" rel="noopener noreferrer" target="_blank">LinkedIn ↗</a>
+<a href="https://www.researchgate.net/profile/Nayeong-Cho" rel="noopener noreferrer" target="_blank">ResearchGate ↗</a>
+<a href="https://orcid.org/0000-0001-6401-2391" rel="noopener noreferrer" target="_blank">ORCID ↗</a>
+</div>
+</aside>
+<main>
+<div class="intro">
+<span class="eyebrow">About me</span>
+<h2>Understanding Earth's Climate System</h2>
+<p>I am an atmospheric scientist and an Assistant Research Scientist at the University of Maryland, Baltimore County (UMBC), working at NASA's Goddard Space Flight Center.</p>
+<p>My research focuses on understanding clouds and their role in Earth's climate system, particularly how cloud properties and their radiative effects influence Earth's energy budget and its variability. Using satellite observations, I investigate cloud regimes, cloud–radiation interactions, and cloud feedbacks, with a growing interest in understanding the contributions of cloud systems to recent changes in Earth's energy imbalance.</p>
+<p>Outside of research, I enjoy exploring different hobbies, often finding myself drawn to a particular activity for a while before moving on to something else. These days, my interests include running, golfing, reading, and knitting.</p>
+</div>
+<section id="research"><div class="sectionhead"><h2>Research</h2></div><div class="cards"><article class="researchcard"><div class="art"><img alt="Earth's Energy Budget research illustration" class="research-image" data-picture="1" loading="lazy" src="picture1.png"/></div><div class="researchbody"><h3>Earth's Energy Budget</h3><p>Radiative changes, Earth's energy imbalance, and cloud-system contributions.</p></div></article><article class="researchcard"><div class="art"><img alt="Cloud Feedbacks research illustration" class="research-image" data-picture="2" loading="lazy" src="picture2.png"/></div><div class="researchbody"><h3>Cloud Feedbacks</h3><p>Satellite observations, cloud-property changes, and cloud radiative kernels.</p></div></article><article class="researchcard"><div class="art"><img alt="Cloud Systems &amp; Classification research illustration" class="animated-map" data-picture="3" loading="eager" src="picture3.gif"/></div><div class="researchbody"><h3>Cloud Systems &amp; Classification</h3><p>Cloud regimes, satellite-based cloud classification, and the organization of cloud systems.</p></div></article><article class="researchcard"><div class="art"><img alt="Aerosol–Cloud Interactions research illustration" class="research-image" data-picture="4" loading="lazy" src="picture4.png"/></div><div class="researchbody"><h3>Aerosol–Cloud Interactions</h3><p>Aerosol influences on cloud properties, precipitation, and radiative processes.</p></div></article></div></section>
+</main>
+</div><footer>© <span id="year">2026</span> Nayeong Cho · Built with GitHub Pages</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script>
+  // Look for the uploaded image under common file extensions; the third card prioritizes GIF.
+  document.querySelectorAll('img[data-picture]').forEach(function(img) {
+    const n = img.dataset.picture;
+    const extensions = n === '3' ? ['gif','webp','png','jpg','jpeg','GIF','PNG','JPG'] : ['png','jpg','jpeg','webp','gif','PNG','JPG','JPEG','GIF'];
+    const names = extensions.flatMap(ext => [`picture${n}.${ext}`, `Picture${n}.${ext}`]);
+    let attempt = 0;
+    img.onerror = function() {
+      attempt += 1;
+      if (attempt < names.length) img.src = names[attempt];
+      else { img.style.display = 'none'; img.parentNode.classList.add('missing-picture'); }
+    };
+    img.src = names[0];
+  });
+</script></body>
 </html>
